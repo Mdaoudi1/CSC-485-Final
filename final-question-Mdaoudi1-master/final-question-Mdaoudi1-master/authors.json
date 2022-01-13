@@ -1,0 +1,398 @@
+[
+  {
+    "name":"Washington Irving",
+    "sex":"M",
+    "born":1783,
+    "died":1859,
+    "stories":[
+      {
+        "title":"The Spectral BrideGroom",
+        "year": 1820
+      }
+    ]
+  },
+  {
+    "name":"Nathanial Hawthorne",
+    "sex":"M",
+    "born":1804,
+    "died":1864,
+    "stories":[
+      {
+        "title":"Young Goodman Brown",
+        "year":1835
+      }
+    ]
+  },
+  {
+    "name":"Edgar Allen Poe",
+    "sex":"M",
+    "born":1809,
+    "died":1849,
+    "stories":[
+      {
+        "title":"The Gold Bug",
+        "year":1843
+      }
+    ]
+  },
+  {
+    "name":"Herman Melville",
+    "sex":"M",
+    "born":1819,
+    "died":1891,
+    "stories":[
+      {
+        "title":"Bartleby the Scrivener",
+        "year":1853
+      }
+    ]
+  },
+  {
+    "name":"Harriet Beecher Stowe",
+    "sex":"F",
+    "born":1811,
+    "died":1896,
+    "stories":[
+      {
+        "title":"Miss Asphyxia",
+        "year":1869
+      }
+    ]
+  },
+  {
+    "name":"Bret Harte",
+    "sex":"M",
+    "born":1836,
+    "died":1902,
+    "stories":[
+      {
+        "title":"The Iliad of Sandy Bar",
+        "year":1873
+      }
+    ]
+  },
+  {
+    "name":"Bayard Taylor",
+    "sex":"M",
+    "born":1825,
+    "died":1878,
+    "stories":[
+      {
+        "title":"Who Was She?",
+        "year":1874
+      }
+    ]
+  },
+  {
+    "name":"Rose Terry Cooke",
+    "sex":"F",
+    "born":1827,
+    "died":1892,
+    "stories":[
+      {
+        "title":"Grit",
+        "year":1877
+      }
+    ]
+  },
+  {
+    "name":"Ambrose Bierce",
+    "sex":"M",
+    "born":1842,
+    "died":1914,
+    "stories":[
+      {
+        "title":"An Occurrence at Owl Creek Bridge",
+        "year":1890
+      }
+    ]
+  },
+  {
+    "name":"Hamlin Garland",
+    "sex":"M",
+    "born":1860,
+    "died":1940,
+    "stories":[
+      {
+        "title":"The Return of a Private",
+        "year":1890
+      }
+    ]
+  },
+  {
+    "name":"Mary Eleanor Wilkins Freeman",
+    "sex":"F",
+    "born":1852,
+    "died":1930,
+    "stories":[
+      {
+        "title":"A New England Nun",
+        "year":1891
+      }
+    ]
+  },
+  {
+    "name":"Henry James",
+    "sex":"M",
+    "born":1843,
+    "died":1916,
+    "stories":[
+      {
+        "title":"The Real Thing",
+        "year":1892
+      }
+    ]
+  },
+  {
+    "name":"Charlotte Perkins Gilman",
+    "sex":"F",
+    "born":1860,
+    "died":1935,
+    "stories":[
+      {
+        "title":"The Yellow Wallpaper",
+        "year":1892
+      }
+    ]
+  },
+  {
+    "name":"Sarah Orne Jewett",
+    "sex":"F",
+    "born":1849,
+    "died":1909,
+    "stories":[
+      {
+        "title":"The Flight of Betsey Lane",
+        "year":1893
+      }
+    ]
+  },
+  {
+    "name":"Grace Elizabeth King",
+    "sex":"F",
+    "born":1851,
+    "died":1932,
+    "stories":[
+      {
+        "title":"La Grande Demoiselle",
+        "year":1893
+      }
+    ]
+  },
+  {
+    "name":"Harold Frederic",
+    "sex":"M",
+    "born":1856,
+    "died":1898,
+    "stories":[
+      {
+        "title":"The War Widow",
+        "year":1894
+      }
+    ]
+  },
+  {
+    "name":"Kate O'Flaherty Chopin",
+    "sex":"F",
+    "born":1851,
+    "died":1904,
+    "stories":[
+      {
+        "title":"Madam Celestin's Divorce",
+        "year":1894
+      }
+    ]
+  },
+  {
+    "name":"Stephen Crane",
+    "sex":"M",
+    "born":1871,
+    "died":1900,
+    "stories":[
+      {
+        "title":"The Blue Hotel",
+        "year":1898
+      }
+    ]
+  },
+  {
+    "name":"Edith Newbold Jones Wharton",
+    "sex":"F",
+    "born":1862,
+    "died":1937,
+    "stories":[
+      {
+        "title":"A Journey",
+        "year":1899
+      }
+    ]
+  },
+  {
+    "name":"Mark Twain",
+    "sex":"M",
+    "born":1835,
+    "died":1910,
+    "stories":[
+      {
+        "title":"The Man That Corrupted Hadleyburg",
+        "year":1900
+      }
+    ]
+  },
+  {
+    "name":"Jack London",
+    "sex":"M",
+    "born":1876,
+    "died":1916,
+    "stories":[
+      {
+        "title":"All Gold Canyon",
+        "year":1905
+      }
+    ]
+  },
+  {
+    "name":"Francis Hopkinson Smith",
+    "sex":"M",
+    "born":1838,
+    "died":1915,
+    "stories":[
+      {
+        "title":"The Rajah of Bungpore",
+        "year":1905
+      }
+    ]
+  },
+  {
+    "name":"Zona Gale",
+    "sex":"F",
+    "born":1874,
+    "died":1938,
+    "stories":[
+      {
+        "title":"Nobody Sick, Nobody Poor",
+        "year":1907
+      }
+    ]
+  },
+  {
+    "name":"O. Henry",
+    "sex":"M",
+    "born":1862,
+    "died":1910,
+    "stories":[
+      {
+        "title":"One Thousand Dollars",
+        "year":1908
+      }
+    ]
+  },
+  {
+    "name":"Sherwood Anderson",
+    "sex":"M",
+    "born":1876,
+    "died":1941,
+    "stories":[
+      {
+        "title":"Queer",
+        "year":1919
+      }
+    ]
+  },
+  {
+    "name":"Ernest Hemingway",
+    "sex":"M",
+    "born":1899,
+    "died":1961,
+    "stories":[
+      {
+        "title":"Up in Michigan",
+        "year":1921
+      }
+    ]
+  },
+  {
+    "name":"John Dos Passos",
+    "sex":"M",
+    "born":1896,
+    "died":1970,
+    "stories":[
+      {
+        "title":"Great Lady on a White Horse",
+        "year":1925
+      }
+    ]
+  },
+  {
+    "name":"Stephen Vincent Benet",
+    "sex":"M",
+    "born":1898,
+    "died":1943,
+    "stories":[
+      {
+        "title":"The King of the Cats",
+        "year":1929
+      }
+    ]
+  },
+  {
+    "name":"Willa Cather",
+    "sex":"F",
+    "born":1873,
+    "died":1947,
+    "stories":[
+      {
+        "title":"Neighbour Rosicky",
+        "year":1930
+      }
+    ]
+  },
+  {
+    "name":"William Faulkner",
+    "sex":"M",
+    "born":1897,
+    "died":1962,
+    "stories":[
+      {
+        "title":"Turnabout",
+        "year":1932
+      }
+    ]
+  },
+  {
+    "name":"James Thurber",
+    "sex":"M",
+    "born":1894,
+    "died":1961,
+    "stories":[
+      {
+        "title":"The Evening's at Seven",
+        "year":1935
+      }
+    ]
+  },
+  {
+    "name":"F. Scott Fitzgerald",
+    "sex":"M",
+    "born":1896,
+    "died":1940,
+    "stories":[
+      {
+        "title":"The Long Way Out",
+        "year":1937
+      }
+    ]
+  },
+  {
+    "name":"William Saroyan",
+    "sex":"M",
+    "born":1908,
+    "died":1981,
+    "stories":[
+      {
+        "title":"Ever Fall in Love with a Midget?",
+        "year":1938
+      }
+    ]
+  }
+]

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Short Stories</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body>
+<h1>Short Stories</h1>
+<p>Visualization of the lives and stories contained in <u>The Signet Classic Book of American Short Stories</u>, edited by Burton Raffel. Data is taken from the First Edition, 1985 </p>
+
+<script type="text/javascript">
+    const w = 1000;
+    const h = 600;
+
+    const svg = d3.select('body').append('svg').attr('width', w).attr('height', h);
+
+    d3.json('authors.json')
+        .then(data => {
+
+            data.forEach(d => {
+                d.agePub = d.stories[0].year - d.born;
+                d.born = new Date(d.born, 0);
+                d.died = new Date(d.died, 0);
+                d.stories.forEach(e => {
+                    e.year = new Date(e.year, 0);
+                });
+            });
+
+            //Sort the data according to year of birth in ascending order
+            //Anonymous function is the comparison criteria:
+            //If d > e, returns a positive and d will be placed after e.
+            //If e > d, returns negative and e will be placed after d.
+            //If d == e, returns zero and their relative order will remain stable.
+            data.sort((d, e) => {
+                return e.year;
+            });
+
+            const bornMin = Math.min(...data.map(d => {
+                return d.born;
+            }));
+
+            const diedMax = Math.max(...data.map(d => {
+                return d.died;
+            }));
+
+            const yScale = d3.scaleLinear()
+                .domain([0, data.length])
+                .range([0, h - 20]);
+
+            const xScale = d3.scaleTime()
+                .domain([bornMin, diedMax])
+                .range([100, w]);
+
+            const axis = d3.axisBottom(xScale)
+                .ticks(d3.timeYear.every(10));
+
+            svg.selectAll('rect')
+                .data(data)
+                .enter()
+                .append('rect')
+                .attr('width', d => {
+                    return xScale(d.died) - xScale(d.born);
+                })
+                .attr('height', 5)
+                .attr('x', d => {
+                    return xScale(d.born);
+                })
+                .attr('y', (d, i) => {
+                    return yScale(i) + 5;
+                })
+                .attr('fill', '#1b9e77')
+                .append('title')
+                .html(d =>  {
+                    return d.name + " (" + (1900 + d.born.getYear()) + "-" + (1900 + d.died.getYear()) + ")";
+                });
+
+            svg.selectAll('text')
+                .data(data)
+                .enter()
+                .append('text')
+                .text(d => {
+                    return d.name;
+                })
+                .attr('x', d => {
+                    return xScale(d.born) - 5;
+                })
+                .attr('y', (d, i) => {
+                    return yScale(i) + 12;
+                })
+                .attr('text-anchor', 'end')
+                .attr('font-size', '12px');
+
+            svg.append('g')
+                .attr("transform", "translate(0,580)")
+                .call(axis);
+
+            svg.append('rect')
+                .attr('x', 5)
+                .attr('y', h - 10)
+                .attr('width', 10)
+                .attr('height', 10)
+                .attr('fill', '#1b9e77');
+
+            svg.append('rect')
+                .attr('x', 5)
+                .attr('y', h - 25)
+                .attr('width', 10)
+                .attr('height', 10)
+                .attr('fill', '#7570b3');
+
+            svg.append('circle')
+                .attr('cx', 10)
+                .attr('cy', h - 35)
+                .attr('r', 5)
+                .attr('fill', '#d95f02');
+
+            svg.append('text')
+                .attr('x', 18)
+                .attr('y', h)
+                .text("Male")
+                .attr('font-size', '12px');
+
+            svg.append('text')
+                .attr('x', 18)
+                .attr('y', h - 15)
+                .text("Female")
+                .attr('font-size', '12px');
+
+            svg.append('text')
+                .attr('x', 18)
+                .attr('y', h - 30)
+                .text("Story")
+                .attr('font-size', '12px');
+        });
+</script>
+</body>
+</html>
